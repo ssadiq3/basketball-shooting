@@ -1,1 +1,5 @@
-Put your final project proposal here.
+My proposal for this project is a live NBA scores and stats display that draws from an online NBA API. It would display live records for teams, the league schedule for the current day, and hopefully make predictions for games based on the metrics provided. I would also use graphs to display the different metrics. 
+
+My background knowledge for this project comes from the fact that I am a big sports and NBA fan, and I am intrigued by the thought of having an application that can display live stats and make predictions for games and who may win the championship as well as individual player awards. 
+
+I hope that by week 1 I can load in the JSON properly from the API and convert it into its data fields, since that will be new to me in C++. By week 2 I want to be able to display the stats in an organized and appealing way using Cinder, this would include graphs. By week 3 I want my app to be able to predict the outcomes of the season, for example predictions of games and the playoff field, as well as individual player awards using the player and game stats I have. If I could finish with these early, I would work more with the predictions to potentially make them more accurate (such as training from previous seasons or games). 
