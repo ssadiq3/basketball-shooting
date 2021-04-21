@@ -12,10 +12,7 @@ namespace finalproject {
     }
 
     void BasketballGame::update() {
-        if (field_.IsShooting()) {
-            field_.ShootBall();
-        }
-
+        field_.AdvanceOneFrame();
     }
 
     void BasketballGame::mouseDrag(ci::app::MouseEvent event) {
@@ -23,8 +20,13 @@ namespace finalproject {
     }
 
     void BasketballGame::keyDown(ci::app::KeyEvent event) {
-        if (ci::app::KeyEvent::KEY_RETURN) {
-            field_.SetShooting(true);
+        switch(event.getCode()) {
+            case ci::app::KeyEvent::KEY_RETURN:
+                field_.SetShooting(true);
+            case ci::app::KeyEvent::KEY_RIGHT:
+                field_.SetMovingRight(true);
+            case ci::app::KeyEvent::KEY_LEFT:
+                field_.SetMovingLeft(true);
         }
     }
 }
