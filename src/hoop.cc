@@ -11,6 +11,8 @@ namespace finalproject {
     }
 
     void Hoop::DrawHoop() {
+        ci::gl::color(ci::Color("White"));
+        ci::gl::drawSolidRect(ci::Rectf(vec2(right_pos_.x, right_pos_.y-100), vec2(right_pos_.x+10, right_pos_.y+10)));
         ci::gl::color(ci::Color("Red"));
         ci::gl::drawLine(right_pos_, left_pos_);
     }

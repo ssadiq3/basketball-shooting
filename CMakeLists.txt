@@ -52,7 +52,8 @@ include("${CINDER_PATH}/proj/cmake/modules/cinderMakeApp.cmake")
 list(APPEND SOURCE_FILES  src/basketball_game.cc
                            src/ball.cc
                            src/hoop.cc
-                           src/field.cc)
+                           src/field.cc
+                           src/direction_line.cc)
 
 list(APPEND TEST_FILES tests/test_field.cc)
 

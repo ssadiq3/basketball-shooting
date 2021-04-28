@@ -4,6 +4,7 @@
 #include "cinder/app/RendererGl.h"
 #include "cinder/gl/gl.h"
 #include <field.h>
+#include <direction_line.h>
 
 namespace finalproject {
 
@@ -23,6 +24,6 @@ class BasketballGame : public ci::app::App {
     const int kMargin = 100;
 
   private:
-    Field field_ = Field();
+    Field field_;
     };
 }
