@@ -9,9 +9,15 @@ namespace finalproject {
     class Hoop {
     public:
 
+        Hoop();
+
         Hoop(vec2 right_position, vec2 left_position);
 
         void DrawHoop();
+
+        void MoveHoopLeft(int multiplier);
+
+        void MoveHoopRight(int multiplier);
 
         vec2 GetRightPosition();
 

@@ -1,9 +1,16 @@
 #include <basketball_game.h>
+#include "cinder/Text.h"
 
 namespace finalproject {
 
     BasketballGame::BasketballGame() {
         ci::app::setWindowSize(kWindowSize, kWindowSize);
+    }
+
+    void BasketballGame::setup() {
+        //ci::gl::Texture texture = cinder::loadImage("cropped.jpg");
+        /*auto image = cinder::loadImage(loadAsset("cropped.jpg"));
+        background_ = ci::gl::Texture2d::create(image);*/
     }
 
     void BasketballGame::draw() {
@@ -15,8 +22,12 @@ namespace finalproject {
         field_.AdvanceOneFrame();
     }
 
-    void BasketballGame::mouseDrag(ci::app::MouseEvent event) {
+    void BasketballGame::mouseDown(ci::app::MouseEvent event) {
+        field_.SetDirection(event.getPos());
+    }
 
+    void BasketballGame::mouseDrag(ci::app::MouseEvent event) {
+        field_.SetDirection(event.getPos());
     }
 
     void BasketballGame::keyDown(ci::app::KeyEvent event) {
@@ -29,5 +40,6 @@ namespace finalproject {
                 field_.SetMovingLeft(true);
         }
     }
+
 }
 

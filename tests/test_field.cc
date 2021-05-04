@@ -2,6 +2,7 @@
 #include <hoop.h>
 #include <ball.h>
 #include <field.h>
+#include <iostream>
 
 TEST_CASE("Test shot motion") {
     finalproject::Field field;
@@ -73,6 +74,16 @@ TEST_CASE("Test ball adjustment") {
         field.SetMovingLeft(true);
         field.AdvanceOneFrame();
         REQUIRE(field.GetBall().GetVelocity().y == -3);
+    }
+}
+
+TEST_CASE("Test set direction") {
+    finalproject::Field field;
+
+    SECTION("Test new initial velocity") {
+        field.SetDirection(vec2(150, 450));
+        std::cout<<field.GetInitialVelocity().x<<std::endl;
+        std::cout<<field.GetInitialVelocity().y<<std::endl;
     }
 }
 

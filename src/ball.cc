@@ -4,12 +4,14 @@
 using glm::vec2;
 namespace finalproject {
 
-    Ball::Ball(float radius, vec2 position, vec2 velocity) {
+    Ball::Ball() {}
+
+    Ball::Ball(float radius, vec2 position, vec2 initial_velocity) {
         initial_position_ = position;
-        initial_velocity_ = velocity;
+        initial_velocity_ = initial_velocity;
         radius_ = radius;
         position_ = position;
-        velocity_ = velocity;
+        velocity_ = initial_velocity;
     }
 
     void Ball::DrawBall() {

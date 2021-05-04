@@ -55,7 +55,8 @@ list(APPEND SOURCE_FILES  src/basketball_game.cc
                            src/field.cc
                            src/direction_line.cc)
 
-list(APPEND TEST_FILES tests/test_field.cc)
+list(APPEND TEST_FILES tests/test_field.cc
+                       tests/test_direction_line.cc)
 
 ci_make_app(
         APP_NAME        basketball-game

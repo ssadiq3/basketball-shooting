@@ -12,9 +12,13 @@ class BasketballGame : public ci::app::App {
     public:
         BasketballGame();
 
+        void setup() override;
+
         void draw() override;
 
         void update() override;
+
+        void mouseDown(ci::app::MouseEvent event) override;
 
        void mouseDrag(ci::app::MouseEvent event) override;
 
@@ -22,6 +26,7 @@ class BasketballGame : public ci::app::App {
 
     const int kWindowSize = 1000;
     const int kMargin = 100;
+    ci::gl::Texture2dRef background_;
 
   private:
     Field field_;

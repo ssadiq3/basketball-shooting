@@ -8,7 +8,10 @@ namespace finalproject {
 
     class Ball {
     public:
-        Ball(float radius, vec2 position, vec2 velocity);
+
+        Ball();
+
+        Ball(float radius, vec2 position, vec2 initial_velocity);
 
         void DrawBall();
 
