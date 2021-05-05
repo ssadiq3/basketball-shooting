@@ -19,14 +19,14 @@ namespace finalproject {
         ci::gl::drawLine(right_pos_, left_pos_);
     }
 
-    void Hoop::MoveHoopLeft(int multiplier) {
-        right_pos_.x -= multiplier;
-        left_pos_.x -= multiplier;
+    void Hoop::MoveHoopLeft() {
+        right_pos_.x -= 1;
+        left_pos_.x -= 1;
     }
 
-    void Hoop::MoveHoopRight(int multiplier) {
-        right_pos_.x += multiplier;
-        left_pos_.x += multiplier;
+    void Hoop::MoveHoopRight() {
+        right_pos_.x += 1;
+        left_pos_.x += 1;
     }
 
     vec2 Hoop::GetRightPosition() {

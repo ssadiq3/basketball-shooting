@@ -1,3 +1,3 @@
-Fill this in before the final project deadline. Someone who has _no familiarity_ with your project should be able to read this and understand:
-* what your project does
-* how to set it up and run it
+My app is a basketball shooting game. The objective is simple, shoot the ball in the hoop. The left and right arrow keys move the ball in those directions, and dragging the mouse adjusts the direction and strength of the shot. Press enter to shoot. If the ball goes in the hoop, you get 2 points, and a miss makes you lose one. Get to +15 points, and you win, however if your score reaches -10, you lose. The shots become more difficult as you gain more points, as the hoop starts to move to the left and right. 
+
+Once the app is downloaded simply run in it through clion and you can begin playing. Once the game is over, you will have to exit the window and rerun it to play again. 

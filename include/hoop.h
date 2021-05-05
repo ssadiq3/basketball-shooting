@@ -15,9 +15,9 @@ namespace finalproject {
 
         void DrawHoop();
 
-        void MoveHoopLeft(int multiplier);
+        void MoveHoopLeft();
 
-        void MoveHoopRight(int multiplier);
+        void MoveHoopRight();
 
         vec2 GetRightPosition();
 
